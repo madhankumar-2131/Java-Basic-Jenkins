@@ -1,11 +1,12 @@
-import java.util.Scanner;
-public class  Test{
+public class Test {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        System.out.println("****");
-        System.out.println("Hello Madhan");
-        System.out.println("****");
-        System.out.println(a);
+        if (args.length < 2) {
+            System.out.println("Please provide two numbers as arguments.");
+            return;
+        }
+
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+        System.out.println("Sum = " + (a + b));
     }
 }
